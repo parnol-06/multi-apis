@@ -80,7 +80,7 @@ app.post("/products", async (req, res) => {
   }
 });
 
-// PUT /products/:id
+/// PUT /products/:id
 app.put("/products/:id", async (req, res) => {
   try {
     const { id } = req.params;
