@@ -64,7 +64,7 @@ app.get("/products/:id", async (req, res) => {
   }
 });
 
-// POST /products
+/// POST /products
 app.post("/products", async (req, res) => {
   try {
     const { name, price } = req.body;
