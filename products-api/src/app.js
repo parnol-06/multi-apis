@@ -14,7 +14,7 @@ const USERS_API_URL = process.env.USERS_API_URL || "http://users-api:4001";
 /// Health del servicio
 app.get("/health", (_req, res) => res.json({ status: "ok", service: SERVICE }));
 
-// Health DB
+/// Health DB
 app.get("/db/health", async (_req, res) => {
   try {
     const r = await pool.query("SELECT 1 AS ok");
