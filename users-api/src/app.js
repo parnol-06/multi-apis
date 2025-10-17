@@ -34,7 +34,7 @@ app.post("/users", async (req, res) => {
   }
 });
 
-// Listar usuarios
+/// Listar usuarios
 app.get("/users", async (_req, res) => {
   try {
     const r = await pool.query("SELECT id, name, email FROM users_schema.users ORDER BY id ASC");

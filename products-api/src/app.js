@@ -24,7 +24,7 @@ app.get("/db/health", async (_req, res) => {
   }
 });
 
-// GET /products/with-users
+/// GET /products/with-users
 app.get("/products/with-users", async (_req, res) => {
   try {
     const r = await pool.query("SELECT id, name, price FROM products_schema.products ORDER BY id ASC");
