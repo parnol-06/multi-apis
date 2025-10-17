@@ -56,7 +56,7 @@ app.get("/users/:id", async (req, res) => {
   }
 });
 
-// Actualizar usuario
+/// Actualizar usuario
 app.put("/users/:id", async (req, res) => {
   try {
     const { id } = req.params;
