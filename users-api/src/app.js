@@ -8,7 +8,7 @@ app.use(express.json());
 
 const PORT = process.env.PORT || 4001;
 
-// Health DB
+/// Health DB
 app.get("/db/health", async (_req, res) => {
   try {
     const r = await pool.query("SELECT 1 AS ok");
@@ -44,7 +44,7 @@ app.get("/users", async (_req, res) => {
   }
 });
 
-// Obtener un usuario por id
+/// Obtener un usuario por id
 app.get("/users/:id", async (req, res) => {
   try {
     const { id } = req.params;
