@@ -18,7 +18,7 @@ app.get("/db/health", async (_req, res) => {
   }
 });
 
-// Crear usuario
+/// Crear usuario
 app.post("/users", async (req, res) => {
   const { name, email } = req.body ?? {};
   if (!name || !email) return res.status(400).json({ error: "name & email required" });
