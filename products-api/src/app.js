@@ -42,7 +42,7 @@ app.get("/products/with-users", async (_req, res) => {
   }
 });
 
-// GET /products
+/// GET /products
 app.get("/products", async (_req, res) => {
   try {
     const r = await pool.query("SELECT id, name, price FROM products_schema.products ORDER BY id ASC");
